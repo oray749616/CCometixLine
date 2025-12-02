@@ -1,11 +1,11 @@
-# @cometix/ccline
+# @airing404/ccline
 
 CCometixLine - High-performance Claude Code StatusLine tool
 
 ## Installation
 
 ```bash
-npm install -g @cometix/ccline
+npm install -g @airing404/ccline
 ```
 
 ## Features
@@ -32,11 +32,11 @@ ccline --version
 Use npm mirror for faster installation:
 
 ```bash
-npm install -g @cometix/ccline --registry https://registry.npmmirror.com
+npm install -g @airing404/ccline --registry https://registry.npmmirror.com
 ```
 
 ## More Information
 
-- GitHub: https://github.com/Haleclipse/CCometixLine
-- Issues: https://github.com/Haleclipse/CCometixLine/issues
+- GitHub: https://github.com/oray749616/CCometixLine
+- Issues: https://github.com/oray749616/CCometixLine/issues
 - License: MIT
