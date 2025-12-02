@@ -7,6 +7,12 @@ pub struct Config {
     pub style: StyleConfig,
     pub segments: Vec<SegmentConfig>,
     pub theme: String,
+    /// User token for API authentication (format: OJuUr80X5Cs/CCvnR4WGKEOAVshX)
+    #[serde(default)]
+    pub user_token: String,
+    /// User ID (numeric)
+    #[serde(default)]
+    pub user_id: String,
 }
 
 // Default implementation moved to ui/themes/presets.rs
@@ -73,6 +79,7 @@ pub enum SegmentId {
     Session,
     OutputStyle,
     Update,
+    IkunCode,
 }
 
 // Legacy compatibility structure

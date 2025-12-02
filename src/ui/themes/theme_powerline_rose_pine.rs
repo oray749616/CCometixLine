@@ -246,3 +246,25 @@ pub fn usage_segment() -> SegmentConfig {
         },
     }
 }
+
+pub fn ikuncode_segment() -> SegmentConfig {
+    SegmentConfig {
+        id: SegmentId::IkunCode,
+        enabled: true,
+        icon: IconConfig {
+            plain: "🏀".to_string(),
+            nerd_font: "\u{f0175}".to_string(),
+        },
+        colors: ColorConfig {
+            icon: Some(AnsiColor::Rgb { r: 156, g: 207, b: 216 }),
+            text: Some(AnsiColor::Rgb { r: 156, g: 207, b: 216 }),
+            background: Some(AnsiColor::Rgb { r: 35, g: 33, b: 54 }),
+        },
+        styles: TextStyleConfig::default(),
+        options: {
+            let mut opts = HashMap::new();
+            opts.insert("timeout".to_string(), serde_json::Value::Number(2.into()));
+            opts
+        },
+    }
+}
